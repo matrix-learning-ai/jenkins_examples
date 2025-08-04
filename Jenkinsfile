@@ -9,6 +9,7 @@ pipeline{
                     echo "Multiline shell steps"
                     ls -latr
                 '''
+                echo "Environment variable Build Id is ${env.BUILD_ID} running on ${env.JENKINS_URL}"
             }
         }
     }
